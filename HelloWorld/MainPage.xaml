@@ -8,8 +8,15 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="ClickMeButton" Content="Click me" HorizontalAlignment="Left" Margin="87,54,0,0" VerticalAlignment="Top" FontSize="24" Click="ClickMeButton_Click"/>
-        <TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Left" Margin="87,164,0,0" TextWrapping="Wrap" Text="Some text" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="ClickMeButton" Content="Begin location tracking" HorizontalAlignment="Stretch" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="24" Click="ClickMeButton_Click"/>
+        <TextBlock x:Name="txtGeolocationPermissionStatus" HorizontalAlignment="Left" Margin="10,86,0,0" TextWrapping="Wrap" Text="Unknown..." VerticalAlignment="Top" FontSize="16" Foreground="#FF5A5A5A"/>
+        <TextBlock x:Name="lblPermissionStatus" HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Geolocation Permission Status:" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="txtPosition" HorizontalAlignment="Left" Margin="10,250,0,0" TextWrapping="Wrap" Text="Unknown..." VerticalAlignment="Top" FontSize="16" Foreground="#FF5A5A5A"/>
+        <TextBlock x:Name="lblPosition" HorizontalAlignment="Left" Margin="10,223,0,0" TextWrapping="Wrap" Text="Geolocation Position:" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="txtGeolocationStatus" HorizontalAlignment="Left" Margin="10,167,0,0" TextWrapping="Wrap" Text="Unknown..." VerticalAlignment="Top" FontSize="16" Foreground="#FF5A5A5A"/>
+        <TextBlock x:Name="lblGeopositionStatus" HorizontalAlignment="Left" Margin="10,140,0,0" TextWrapping="Wrap" Text="Geolocation Status:" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="btnUpdatePosition" Content="Update position" HorizontalAlignment="Stretch" Margin="10,349,10,0" VerticalAlignment="Top" Click="btnUpdatePosition_Click"/>
+        <Button x:Name="btnAccessLocationSettings" Content="Go to location settings" HorizontalAlignment="Stretch" Margin="10,405,10,0" VerticalAlignment="Top" Click="btnAccessLocationSettings_Click"/>
 
     </Grid>
 </Page>

@@ -4,4 +4,7 @@
     <DeviceId>47FF8CA8-6CE4-4B6F-8CD3-91936EBF1534</DeviceId>
     <UseEmulator>true</UseEmulator>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
 </Project>
